@@ -33,6 +33,14 @@ public class MavenSimpleForm extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+		String uname=request.getParameter("username");
+		String password=request.getParameter("password");
+		if(uname.equal("abc")&&password.equals("123"))
+		{
+			response.sendRedirectory("LoginSuccess.jsp");
+		}
+		else
+			response.sendRedirectry("Loginfail.jsp");
 	}
 
 }
