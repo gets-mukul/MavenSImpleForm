@@ -1,6 +1,6 @@
 <html>
 <body>
-	<form method="post" action="MavenSimpleForm">
+	<form method="post" action="/MavenForm/fffff">
 		<table>
 			<tr>
 				<td>USER NAME</td>
