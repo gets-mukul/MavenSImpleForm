@@ -4,7 +4,7 @@
 		<table>
 			<tr>
 				<td>USER NAME</td>
-				<td><input type="text" name="ussername"</td>
+				<td><input type="text" name="username"></td>
 			</tr>
 			<tr>
 				<td>PASSWORD</td>
