@@ -7,6 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>Login Successfull</h2>
+<%String user=request.getParameter("name"); %>
+<%String upassword=request.getParameter("password"); %>
+<%if(user == "abc" && upassword == "123"){
+    out.print("login successful Welcome "+user);   
+   }
+   else {
+	   out.print("login fail...........try again "); 
+   } %>  
 </body>
 </html>

@@ -37,14 +37,16 @@ public class fffff extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
-		doGet(request, response);
 		String uname = request.getParameter("username");
+		request.setAttribute("name", uname);
+		request.getRequestDispatcher("check.jsp").forward(request, response);
+		
+		
+		
 		String password = request.getParameter("password");
-		System.out.println("user "+uname);
-		if (uname.equals("abc") && password.equals("123")) {
-			response.sendRedirect("success.jsp");
-		} else
-			response.sendRedirect("fail.jsp");
+		request.setAttribute("pass", password);
+		request.getRequestDispatcher("check.jsp").forward(request, response);
+		
 	}
 
 }
